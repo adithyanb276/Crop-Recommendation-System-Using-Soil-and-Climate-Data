@@ -11,8 +11,8 @@
 ## 👥 Team Members
 | Member | Contributions |
 |---|---|
-| 🔴 [Your Name] | S1, S3, S5, S6, S9, S10 |
-| Abhita | S2, S4, S7, S8, S10 |
+|  Adithyan Biju  | S1, S3, S5, S6, S9, S10 |
+| Abhitha Raj | S2, S4, S7, S8, S10 |
 
 ## 🌐 Live App
 ### 👉 [Click here to open the Streamlit App ]   (https://share.streamlit.io/app/crop-recommendation-system-bjr5ew6ggqbgvvynj2vvdo/)
@@ -41,16 +41,16 @@ Humidity, pH, and Rainfall.
 
 | Stage | Description | Lead |
 |---|---|---|
-| S1 | Problem definition & literature review | 🔴 Your Name |
-| S2 | Data collection & understanding | Abhita |
-| S3 | Data preprocessing & cleaning | 🔴 Your Name |
-| S4 | Exploratory data analysis | Abhita |
-| S5 | Feature engineering & selection | 🔴 Your Name |
-| S6 | Model building & training | 🔴 Your Name |
-| S7 | Model evaluation & comparison | Abhita |
-| S8 | Model interpretation & explainability | Abhita |
-| S9 | Streamlit deployment | 🔴 Your Name |
-| S10 | Documentation & presentation | Both |
+| S1 | Problem definition & literature review |  Adithyan Biju |
+| S2 | Data collection & understanding | Abhitha Raj |
+| S3 | Data preprocessing & cleaning |  Adithyan Biju |
+| S4 | Exploratory data analysis | Abhitha Raj |
+| S5 | Feature engineering & selection |  Adithyan Biju |
+| S6 | Model building & training |  Adithyan Biju |
+| S7 | Model evaluation & comparison |  Abhitha Raj |
+| S8 | Model interpretation & explainability |  Abhitha Raj |
+| S9 | Streamlit deployment | Adithyan Biju |
+| S10 | Documentation & presentation | Adithyan Biju , Abhitha Raj |
 
 ## 📈 Results
 
@@ -81,10 +81,38 @@ Humidity, pH, and Rainfall.
 
 ## ⚙️ Run Locally
 ```bash
-git clone https://github.com/🔴YOURUSERNAME/crop-recommendation-system-using-soil-and-climate-data.git
+git clone https://github.com/adithyanb276/crop-recommendation-system-using-soil-and-climate-data.git
 cd crop-recommendation-system-using-soil-and-climate-data
 pip install -r requirements.txt
 streamlit run app/app.py
 ```
 
 ## 📁 Repository Structure
+
+
+crop-recommendation-system/
+├── crop_recommendation.ipynb   ← Main notebook (all 10 stages)
+├── app/
+│   └── app.py                  ← Streamlit app
+├── data/
+│   └── Crop_recommendation.csv
+├── models/                     ← Saved model files
+│   ├── random_forest.pkl
+│   ├── knn.pkl
+│   ├── decision_tree.pkl
+│   ├── scaler.pkl
+│   └── label_encoder.pkl
+├── individual_profiles/        ← GitHub activity screenshots
+├── requirements.txt
+└── README.md
+
+## 🔗 Links
+- 📱 Live App: https://share.streamlit.io/app/crop-recommendation-system-bjr5ew6ggqbgvvynj2vvdo/
+- 📓 Notebook: crop_recommendation.ipynb
+- 📊 Dataset: [Kaggle Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
+
+---
+*Predictive Analytics Group Project · Random Forest · KNN · 
+Decision Tree · Streamlit · SHAP*
+
+
