@@ -1,76 +1,90 @@
+
+
 # 🌾 Crop Recommendation System
 
 > **Predictive Analytics — Group Project**
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
+![Python](https://img.shields.io/badge/Python-3.10+-blue) 
+![Streamlit](https://img.shields.io/badge/Streamlit-Live-green) 
+![Accuracy](https://img.shields.io/badge/Accuracy-99.6%25-brightgreen)
 
 ## 👥 Team Members
-| Member | GitHub | Contributions |
-|---|---|---|
-| [Your Name] | @yourgithub | S1, S3, S5, S6, S9, S10 |
-| Abhita | @abhitagithub | S2, S4, S7, S8, S10 |
+| Member | Contributions |
+|---|---|
+| 🔴 [Your Name] | S1, S3, S5, S6, S9, S10 |
+| Abhita | S2, S4, S7, S8, S10 |
 
 ## 🌐 Live App
-**[Click here to open the Streamlit app](https://your-app-url.streamlit.app)**
+### 👉 [Click here to open the Streamlit App ]   (https://share.streamlit.io/app/crop-recommendation-system-bjr5ew6ggqbgvvynj2vvdo/)
 
 ---
 
 ## 📌 Problem Statement
-Recommend the most suitable crop for farming based on soil nutrients (N, P, K), temperature, humidity, pH, and rainfall using Machine Learning.
+Farmers often lack data-driven guidance on which crop to grow based on 
+their soil and climate conditions. This project builds an AI-powered 
+crop recommendation system that predicts the most suitable crop using 
+7 measurable parameters — Nitrogen, Phosphorus, Potassium, Temperature, 
+Humidity, pH, and Rainfall.
 
 ## 📊 Dataset
-- **Source**: [Kaggle — Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
-- **Size**: 2200 rows × 8 columns
-- **Classes**: 22 crops (100 samples each — perfectly balanced)
-- **Features**: N, P, K, temperature, humidity, ph, rainfall
-
-## 🔬 Methodology
-All 10 stages of the data science life cycle are covered in `crop_recommendation.ipynb`:
-
-| Stage | Description |
+| Property | Details |
 |---|---|
-| S1 | Problem definition & literature review |
-| S2 | Data collection & understanding |
-| S3 | Data preprocessing & cleaning |
-| S4 | Exploratory data analysis |
-| S5 | Feature engineering & selection |
-| S6 | Model building & training (RF, KNN, DT) |
-| S7 | Model evaluation & comparison |
-| S8 | SHAP explainability |
-| S9 | Streamlit deployment |
-| S10 | Documentation |
+| Source | Kaggle — Crop Recommendation Dataset |
+| Rows | 2200 |
+| Columns | 8 (7 features + 1 target) |
+| Classes | 22 crops |
+| Balance | Perfectly balanced — 100 samples per crop |
+| Missing values | None |
+| Duplicates | None |
+
+## 🔬 Methodology — Data Science Life Cycle
+
+| Stage | Description | Lead |
+|---|---|---|
+| S1 | Problem definition & literature review | 🔴 Your Name |
+| S2 | Data collection & understanding | Abhita |
+| S3 | Data preprocessing & cleaning | 🔴 Your Name |
+| S4 | Exploratory data analysis | Abhita |
+| S5 | Feature engineering & selection | 🔴 Your Name |
+| S6 | Model building & training | 🔴 Your Name |
+| S7 | Model evaluation & comparison | Abhita |
+| S8 | Model interpretation & explainability | Abhita |
+| S9 | Streamlit deployment | 🔴 Your Name |
+| S10 | Documentation & presentation | Both |
 
 ## 📈 Results
-| Model | Test Accuracy |
-|---|---|
-| Random Forest | *(add after running)* |
-| KNN | *(add after running)* |
-| Decision Tree | *(add after running)* |
 
-## 🖼️ Screenshots
-*(Add Streamlit app screenshots here after deployment)*
+| Model | CV Accuracy | Test Accuracy |
+|---|---|---|
+| 🥇 Random Forest | 99.60% | 🔴 (fill after running S7) |
+| 🥈 Decision Tree | 98.58% | 🔴 (fill after running S7) |
+| 🥉 KNN | 97.90% | 🔴 (fill after running S7) |
+
+**Best model: Random Forest** with 99.60% cross-validation accuracy
+
+### Key Findings
+- 🌧️ **Rainfall** and **Humidity** are the most important features
+- 🌿 **Potassium (K)** ranks 3rd in importance
+- ⚗️ **pH** has the least influence on crop prediction
+- ✅ Dataset is perfectly balanced — no class imbalance handling needed
+
+## 🖼️ App Screenshots
+
+### Welcome Screen
+![Welcome Screen](screenshots/welcome.png)
+
+### Prediction — Rice recommended with 90% confidence
+![Prediction](screenshots/prediction.png)
+
+### SHAP Explanation
+![SHAP](screenshots/shap.png)
 
 ## ⚙️ Run Locally
 ```bash
-git clone https://github.com/yourusername/crop-recommendation-system.git
-cd crop-recommendation-system
+git clone https://github.com/🔴YOURUSERNAME/crop-recommendation-system-using-soil-and-climate-data.git
+cd crop-recommendation-system-using-soil-and-climate-data
 pip install -r requirements.txt
-# Run notebook first to generate models/
-jupyter notebook crop_recommendation.ipynb
-# Then launch app
 streamlit run app/app.py
 ```
 
 ## 📁 Repository Structure
-```
-crop-recommendation-system/
-├── crop_recommendation.ipynb   # Main notebook (all 10 stages)
-├── app/
-│   └── app.py                  # Streamlit app
-├── data/
-│   └── Crop_recommendation.csv
-├── models/                     # Saved models (generated by notebook)
-├── individual_profiles/        # GitHub activity screenshots
-├── requirements.txt
-└── README.md
-```
